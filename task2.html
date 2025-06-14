@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Webpage with Form & To-Do List</title>
+  <style></style>
+  <link rel="stylesheet" href="task2.css"/>
+
+</head>
+<body>
+
+  <header>
+    <h1>My Web App</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Form</a>
+      <a href="#">Tasks</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Form Section -->
+    <section>
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="submit" value="Submit">
+        <div class="error" id="formError"></div>
+      </form>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section>
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter a new task">
+      <button onclick="addTask()">Add Task</button>
+      <ul id="todo-list"></ul>
+    </section>
+  </main>
+
+<script src="task2.js"></script>
+
+</body>
+</html>
